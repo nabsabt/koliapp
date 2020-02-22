@@ -1,0 +1,144 @@
+Delivered-To: nabsabt@gmail.com
+Received: by 2002:a0c:c343:0:0:0:0:0 with SMTP id j3csp4688387qvi;
+        Wed, 22 Jan 2020 01:06:23 -0800 (PST)
+X-Google-Smtp-Source: APXvYqxSqQM0Rnt4a5RlLskEirVAu8qkYbaTzXW1j5MMnFc24tQoBMO4+fpIUOQlXhvJE4PjeeDn
+X-Received: by 2002:adf:f850:: with SMTP id d16mr9781712wrq.161.1579683983225;
+        Wed, 22 Jan 2020 01:06:23 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1579683983; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bYxaGJa06zQ8lmOju8T76VZfq3HcgcurZbSkxYkzAEDeIy953OCGf0stPmtSfkRilG
+         kXCHNHpbDU2mkea/7aT+BcC+hDYcEWzIYfinvNAVj9ISMbLhHruZG1BNT4BqHvUFIYfP
+         9JISoyLrmoNBM1TZmABuc52PyKVdj/haefWL/CUP5sYGdymnZ4hjfRUstkNAxndPZ+7T
+         dzXyPp1kduM9m4nHjJXis0JhPAmdzikcbB7XrCtxOf7KMuAfWAV9wNAjjSM4FmQVgfui
+         d6tU5KjlrlkkOix5TI+0gVHoV0OgUj31qMlQZmDqpr/V+JZzp2ppnlv9ifEmw+oBKk28
+         RoFg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:reply-to:from:to:subject
+         :date:dkim-signature:message-id;
+        bh=w3eLGHL0Qzp0oeK2y8zSClkMPWW6g5A3NCq1Kor17J8=;
+        b=ByQ+JSFaAP2Gz6nk8SoIjNPkIYHsYWM8duBs2PIavf8plk6W+9zC6B5DM1DnN9HHnQ
+         u4GzQ2WW8VilMBkf9H9s3B9QNt8O9fozNt9ooyx1cVPxCs/4EmMwhalr4bUXa1rqvl9m
+         inErBk8GwEDuS7sYUbTyw3syVr0XT/VsarqicRRkpHvIy8PoTSf3zDmyCceJocAqoF4B
+         GKG1Lnb9Y8OFleK0vEbcwH5Z/OhF4ZvIAMeZDm0prRcEcy3iEPNNJPenLxyyfKmRMpdT
+         TD1lpFkrLDXovvOHNVRNkdqjuXlm0eUgmj9xLeG14Eu0LrYFsbgJEt7y3rHYLRalb1oC
+         UlHw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@megacp.com header.s=default header.b=Bv1AJ0MB;
+       spf=pass (google.com: domain of admin@megacp.com designates 194.38.104.210 as permitted sender) smtp.mailfrom=admin@megacp.com
+Return-Path: <admin@megacp.com>
+Received: from megacp.com (www.megacp.com. [194.38.104.210])
+        by mx.google.com with ESMTPS id 2si1237247wmo.23.2020.01.22.01.06.23
+        for <nabsabt@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 22 Jan 2020 01:06:23 -0800 (PST)
+Received-SPF: pass (google.com: domain of admin@megacp.com designates 194.38.104.210 as permitted sender) client-ip=194.38.104.210;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@megacp.com header.s=default header.b=Bv1AJ0MB;
+       spf=pass (google.com: domain of admin@megacp.com designates 194.38.104.210 as permitted sender) smtp.mailfrom=admin@megacp.com
+Message-ID: <5e28108f.1c69fb81.b340.52e2SMTPIN_ADDED_MISSING@mx.google.com>
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=megacp.com;
+	 s=default; h=MIME-Version:Content-transfer-encoding:Content-type:Reply-To:
+	From:To:Subject:Date:Sender:Message-ID:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=w3eLGHL0Qzp0oeK2y8zSClkMPWW6g5A3NCq1Kor17J8=; b=Bv1AJ0MBak9gpIz2HsIYzNudB5
+	nraXXv8UTYxh0xADpFbdQp0B1ByE4BxftPSqLT0XSj3BUSMYedlgnQOnmeuwSce1wR6RhL6fyR5lV
+	HO5REVCNtOWYVJxcC3q54/RshS62b7ZjITBIRynZmh7cr4T2yUtRFOSfiSvIFjyPWLcDL8E8fN7H6
+	nIpx6dsy6mvoUs3DqyA/O0UY7D0iVapQpjXTOClBlSohVtjqAO5Bl7DIP1XLlRl4py0xL4aXXFwK8
+	aoY90Xfdhmp6GkEPYLQ7cF9sTCU4ZnI0FLbBzJfPD7NE9+YTBh1Ud4qjmSrFd5NBx4QO6isAv9eMQ
+	dSey1T+A==;
+Received: from [127.0.0.1] (port=52010 helo=megacp.com)
+	by mainsrv.megacp.com with esmtp (Exim 4.91)
+	(envelope-from <admin@megacp.com>)
+	id 1iuBxu-0005M7-PG
+	for nabsabt@gmail.com; Wed, 22 Jan 2020 10:06:22 +0100
+Date: Wed, 22 Jan 2020 10:06:22 CET
+Subject: =?iso-8859-2?B?VOFyaGVseSBha3RpduFs4XM=?=
+To: Nagy Bence <nabsabt@gmail.com>
+From: admin@megacp.com
+Reply-To: admin@megacp.com
+Content-type: text/plain; charset=iso-8859-2
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-MimeOLE: AWBS Mailer v1.2
+X-Mailer: AWBS Mailer v1.2
+Content-transfer-encoding: 8bit
+MIME-Version: 1.0
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - mainsrv.megacp.com
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - megacp.com
+X-Get-Message-Sender-Via: mainsrv.megacp.com: acl_c_authenticated_local_user: megacp
+X-Authenticated-Sender: mainsrv.megacp.com: megacp
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+
+Dátum: 2020-01-22
+
+Tisztelt Nagy Bence!
+
+
+
+Ez az e-mail tartalmazza az Ön tárhelyének adatait. Kérem olvassa el figyelmesen és nyomtassa ki, vagy másolja biztos helyre, ahol késõbb is megtalálja.
+
+=============================================
+Tárhely információk: 
+=============================================
+
+Csomag: Mikro_iworx_nocluster
+Fõ domain név: koliapp.hu
+Szerver IP cím: 5.56.37.187
+Email cím: nabsabt@gmail.com
+Jelszó: y8R6Bch?tFb4Q
+
+A vezérlõ panel (Interworx) elérése: 
+http://koliapp.hu:2080/siteworx
+vagy
+https://koliapp.hu:2443/siteworx
+
+Mindkét helyen a fenti email címmel (nabsabt@gmail.com), jelszóval (y8R6Bch?tFb4Q) illetve a fõ domain nevével (koliapp.hu) tud belépni.
+Az új DNS publikussá válásáig vagy ha új domain rendelés volt, annak beregisztrálásáig az alábbi link használható:
+http://server15.iworx-host.com:2080/siteworx
+vagy
+https://server15.iworx-host.com:2443/siteworx
+FONTOS!!! Az Interworx bejelentkezõ képernyõn a domain mezõbe felkínált server15.iworx-host.com-t át kell írni a saját domainre (koliapp.hu) ebben az esetben!
+
+Interworx segítségével kezelheti email címeit, adatbázisait, weboldalait, domainjait.
+
+Mail szerver (POP3, IMAP és SMTP szerver): mail.koliapp.hu
+Weben keresztül elérhetõ levelezõ: http://koliapp.hu/webmail
+FONTOS!!! Elõfordulhat, hogy az internet szolgáltatója miatt nem tud levelet küldeni a mail.koliapp.hu-t használva. Erre megoldás (mivel sok internet szolgáltató szûri / tiltja a 25-ös szabvány levélküldési portot) a levelezõ programba 25-ös levélküldési port átírása 587-re, TLS vagy STARTTLS titkosítás használata és az SMTP hitelesítés bekapcsolása.
+Email címeket az Interworx tárhely kezelõ felületen tud létrehozni a domain nevéhez, a levelezõ programban a létrehozott email címet kell felhasználó névnek megadni, jelszónak pedig az email cím létrehozásakor megadott jelszót.
+
+Ftp szerver: koliapp.hu (ha új domain, akkor annak bejegyzéséig a 5.56.37.187-es IP)
+Ftp felhasználó név: ftp@koliapp.hu
+Ftp jelszó: y8R6Bch?tFb4Q
+
+Adatbázis kiszolgáló elérhetõségei (ha a csomaghoz jár adatbázis támogatás): FONTOS!!! AZ ADATBÁZIS SZERVER NEVE NEM LOCALHOST, HANEM az Interworx-ben adatbázis létrehozáskor a Hoszt oszlopban megjelenõ adatbázis szerver név (általában mysqlX.iworx-host.com; ahol az X a szerver nevében lévõ szám)
+Adatbázis felhasználó név: Interworx-ben külön létrehozott adatbázis felhasználó
+Adatbázis jelszó: Interworx-ben külön létrehozott adatbázis felhasználóhoz tartozó jelszó
+PHPMyadmin elérés: interworx belépésen kívül is van lehetõség elérni egy dedikált phpMyadmin-t. Ennek elérése az alábbi módon történik: a mysql szerver neve elé be kell írni, hogy "phpmyadmin-". Tehát ha a mysql szerver neve mysqlX.iworx-host.com, akkor a phpMyadmin elérhetõsége https://phpmyadmin-mysqlX.iworx-host.com. A mysql szerver nevét a Interworx felületen mindig a mysql adatbázisoknál lehet megnézni!
+Javasoljuk viszont, hogy a Interworx-bõl elérhetõ phpMyadmin használja, max. külsõs fejlesztõnek érdemes kiadni ezt a külön phpMyadmin elérést!
+
+A weblapját ideiglenesen az alábbi módon érheti el: a Interworx-be bejelentkezve vegye fel a Parkoló domainekhez Server Alias típusúként az alábbi domain nevet: XYZ.interworxtarhely.hu (XYZ helyére a domain nevét írja /pl. ha a domain neve azendomainevem.hu, akkor az XYZ helyére írja a azendomainevemhu-t, így a felvenni kívánt név az azendomainevemhu.interworxtarhely.hu lesz) Ezútán a http://azendomainevemhu.interworxtarhely.hu címen tudja elérni a weblapját ideiglenesen (ezt az ideiglenes elérést csak addig szabad használni, ameddig a domain név bejegyzésre nem kerül vagy szolgáltató váltásnál átkérésre hozzánk!)
+
+A weblapot mindig a DOMAINNEV/html mappába kell feltölteni ftp keresztül (azon belül akár almappába). Ha hozzáadott domain nevet vesz fel, akkor az ahhoz tartozó weblapot a HOZZAADOTTNEV/html mappába kell elhelyezni.
+
+Névszerverek:
+Elsõdleges - ns1.iworx-host.com
+Másodlagos - ns2.iworx-host.com
+Harmadlagos - ns3.iworx-host.com
+
+A http://server15.iworx-host.com:2080/siteworx hívás csak addig használatos, ameddig a domain regisztrátoránál a DNS-ben nem állítják be a fenti névszervereket vagy a szerver IP-jét (5.56.37.187) illetve ha új domain igénylése volt, annak beregisztrálásáig.
+Ha ez megtörtént, akkor a http://koliapp.hu:2080/siteworx cím használatos (vagy ennek ssl-es változata)
+
+Ha kérdése lenne az alábbi linken veheti fel velünk a kapcsolatot: https://megacp.com.
+
+
+Üdvözlettel,
+
+Adminisztrátor
+3 in 1 Hosting Bt. - Ügyfél Központ

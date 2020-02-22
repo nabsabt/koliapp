@@ -1,0 +1,193 @@
+@font-face { font-family: ZCOOL-Kuaile; 
+    src: url('./sources/ZCOOLKuaiLe-Regular.ttf'); } 
+
+@font-face { font-family: Righteous; 
+    src: url('./sources/Righteous-Regular.ttf'); } 
+
+
+body {
+    background-color: rgb(246,181,23 ) ;
+
+    padding: 0;
+    margin: 0;
+}
+
+#main_container{
+    border-left: 45px;
+    border-right: 45px;
+    border-top: 0;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: rgb(21,103,147);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#header{
+    height: 50px;
+    background-color: rgba(51,51,51, 1);
+}
+
+#language_color{
+    float:left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#sign_in{
+    float:right;
+    margin-right: 10px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+#sign_in_form{
+    margin-bottom: 0;
+}
+
+
+#username, #password, #submit, #userIcon{
+    height: 25px;
+    text-align: center;
+}
+
+#img{
+    padding-left: 20px;
+    float: right;
+}
+#engIndex, #hunIndex{
+    text-decoration: none;
+    padding: 1px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(51,51,51);
+}
+
+#engIndex:link, #engIndex:visited,#hunIndex:link, #hunIndex:visited{
+    color: rgb(51,51,51);
+    background-color: rgb(230,230,230);
+}
+
+#engIndex:hover, #hunIndex:hover{
+    text-decoration: none;
+
+}
+
+#default, #grey{
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+#default{
+    background-color: rgb(246,181,23 );
+}
+#grey{
+    background-color: rgb(230,230,230);
+}
+
+#logo_img{
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    transition: 600ms;
+}
+#logo_img:hover {
+    opacity: 0.7;
+    height: 270px;
+    transform: rotate(45deg);
+    transition: 600ms;
+    padding-bottom: 0px;
+}
+
+#engIndex, #hunIndex,#submit, #h3_subtitle, #h3_official, #h4_event1, #h5_event1_date, #p_event1, #h4_event2, #h5_event2_date, #p_event2{
+    color: rgb(51, 51, 51);
+    font-family: Righteous;
+    text-align: center;
+    padding-top: 1%;
+}
+
+
+#h3_subtitle {
+    font-size: 45px;
+    padding-top:6%;
+}
+
+#h3_official{
+    font-size: 45px;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#main_anchors{
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-family: Righteous;
+    font-size: 25px;
+}
+#washing, #studying, #occasion, #report {
+    color: rgb(51, 51, 51);
+    margin: 50px;
+    transition: 400ms;
+
+}
+
+#washing:hover, #studying:hover, #occasion:hover, #report:hover {
+    color: white;
+    transition: 400ms;
+}
+
+#official_controllers{
+
+}
+footer{
+    height: 100px;
+    background-color: rgb(51,51,51);
+    border: 0;
+    position:static;
+    margin-bottom: 0;
+
+}
+
+#contacts{
+    float: right;
+    color: white;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+#made_by, #contacts, #rights{
+    font-family: Righteous;
+    margin-top: 0;
+    padding-top: 2px;
+    margin-bottom: 0;
+}
+
+#event1, #event2 {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+}
+
+#event2{
+    border-bottom: none;
+}
+
+
+
+#h4_event1, #h4_event2{
+    font-size: 28px;
+}
+

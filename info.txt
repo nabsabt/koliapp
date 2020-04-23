@@ -1,7 +1,6 @@
 Project tasks:
 
-Jeremy:
-
+Jeremy: Language localization
 
 Martina:
 

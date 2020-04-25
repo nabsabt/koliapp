@@ -1,8 +1,10 @@
-@font-face { font-family: ZCOOL-Kuaile; 
-    src: url('./sources/ZCOOLKuaiLe-Regular.ttf'); } 
+@font-face {
+    font-family: ZCOOL-Kuaile;
+    src: url('../sources/ZCOOLKuaiLe-Regular.ttf');
+} 
 
 @font-face { font-family: Righteous; 
-    src: url('./sources/Righteous-Regular.ttf'); } 
+    src: url('../sources/Righteous-Regular.ttf'); } 
 
 
 body {

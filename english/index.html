@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="../scripts/script.js"></script>
+    <title>KoliApp</title>
+</head>
+<body>
+
+
+    <div id="main_container">
+        <div id="header">
+            <div id="language_color">
+                <a href="../hun/index.html" id="hunIndex">HU</a>
+                <button id="default" onclick="defaultPattern()"></button>
+                <button id="grey" onclick="greyPattern()"></button>
+            </div>
+            <div id="sign_in">
+                <form id="sign_in_form">
+                    <input type="text" id="username">
+                    <input type="password" id="password">
+                    <input type="submit" id="submit">
+                    <div id="img">
+                        <img src="../sources/userIcon.gif" id="userIcon">,
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div id="koliapp_logo">
+            <img src="logo.gif" id="logo_img">
+        </div>
+
+
+        <div id="main_controller">
+            <h3 id="h3_subtitle">What would you like to do? </h3>
+            <div id="main_anchors">
+                <a href="./washing/washing_index.html" id="washing">Reserve a Washing Machine</a><br>
+                <a href="./studying/studying_index.html" id="studying">Reserve a Study</a><br>
+                <a href="./occasion/occasion_index.html" id="occasion">Register an event</a><br>
+                <a href="./report/report_index.html" id="report">Bug report</a>
+            </div>
+        </div>
+        <div id="official_controllers">
+            <div id="pseudo_div"></div>
+            <div id="official_events">
+                <h3 id="h3_official">Official Notifications</h3>
+
+                <div id="event1">
+                    <h4 id="h4_event1">Fire service exercise</h4>
+                    <h5 id="h5_event1_date">2019.10.19 09:00</h5>
+                    <p id="p_event1">
+                        A fire service excercise is taking place on the above date.Everyone has 6 minutes to leave the building after the siren has been blown. Whoever cannot complete the excercise in the given amount of time will be fined by the trusteeship.
+                    </p>
+                </div>
+
+                <div id="event2">
+                    <h4 id="h4_event2">Blockcheck</h4>
+                    <h5 id="h5_event2_date">2019.10.19 09:00</h5>
+                    <p id="p_event2">
+                        Every block will be checked for cleanness by the trusteeship and the college committee.
+                    </p>
+                </div>
+
+            </div>
+            <div id="popup_div"></div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
+<footer>
+    <div id="contacts">
+        <p id="made_by">Created by : Nagy Bence, Perlaki Bal�zs</p>
+        <p id="contact">Get in touch: nabsabt@gmail.com</p>
+        <p id="rights">�All rights reserved!</p>
+    </div>
+</footer>

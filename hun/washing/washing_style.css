@@ -1,6 +1,12 @@
-@font-face { font-family: Righteous; 
-    src: url('../sources/Righteous-Regular.ttf');
- } 
+@font-face {
+    font-family: ZCOOL-Kuaile;
+    src: url('../../sources/ZCOOLKuaiLe-Regular.ttf');
+}
+
+@font-face {
+    font-family: Righteous;
+    src: url('../../sources/Righteous-Regular.ttf');
+} 
 
 
 body {
@@ -14,6 +20,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 
 #logo_img{
     height: 110px;
@@ -32,59 +39,52 @@ body {
     transition: 600ms;
     padding-bottom: 0px;
 }
+#h3_subtitle, #p_return, #table1, #machine_name{
+    color: rgb(51, 51, 51);
+    font-family: Righteous;
+    text-align: center;
+    padding-top: 3%;
 
-#controllers{
-    margin-top: 2%;
 }
 
-#text_area{
+#remove_reservation{
+    color: rgb(51, 51, 51);
+    font-family: Righteous;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+
+#h3_subtitle{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+#table1{
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
-#controllers, #title, #room, #notes, #text_area, #p_return{
-    color: rgb(51, 51, 51);
-    font-family: Righteous;
-    text-align: center;
-    padding: 10px;
-    margin: 3px;
-}
 
 #p_return{
     padding-top: 0;
-    padding-bottom: 5%;
     margin: 0;
    
    }
-
-   #submit {
-    color: rgb(51, 51, 51);
-    font-family: Righteous;
-    text-align: center;
-    padding: 10px;
-    margin: 3px; 
-    transition: 400ms;
-}
-
-#submit:hover{
-    color: white;
-    background-color: rgb(100, 100, 100);
-    font-family: Righteous;
-    text-align: center;
-    padding: 10px;
-    margin: 3px; 
-    transition: 400ms;
-}
    
 
 #arrow_img{
     height: 110px;
     width: auto;
     display: block;
+    padding-top: 10px;
+    transition: 600ms;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
-
-    transition: 600ms;
     margin-bottom: 0;
 }
 #arrow_img:hover {
@@ -93,7 +93,6 @@ body {
     transition: 600ms;
     
 }
-
 #return{
     width: fit-content;
     margin-left: auto;

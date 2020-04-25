@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="studying_style.css">
+    <script src="../../scripts/studying/studying_script.js"></script>
+    <title>KoliApp - Studies</title>
+</head>
+
+<body>
+    <div id="main_container">
+
+
+        <div id="koliapp_logo">
+            <img src="../logo.gif" id="logo_img">
+        </div>
+
+        <div id="main_controller">
+            <h3 id="h3_subtitle">Reserve a Study</h3>
+            <p id="choose" style="font-size: 25px;">Choose a Study</p>
+            <p id="comment" style="font-style: italic;">You can see the already reserved rooms on the list<br> Check if there is enough space for your squad.</p>
+        </div>
+
+        <div id="controllers">
+            <select name="rooms" id="rooms">
+                <option selected> -choose a study- </option>
+                <option> 117 </option>
+                <option> 545 </option>
+                <option> 613 </option>
+                <option> 226 </option>
+                <option> 157 </option>
+                <option> 565 </option>
+                <option> 603 </option>
+                <option> 256 </option>
+            </select>
+            <p id="free_slots" style="visibility: hidden;">Free slots:</p>
+            <p id="current_purpose" style="visibility: hidden;">What it's used for currently:</p>
+            <br>
+            <select name="number_of_person" id="number_of_person">
+                <option selected> -how many people?- </option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+            </select>
+            <br>
+            <select name="purpose" id="purpose">
+                <option selected> -Purpose?- </option>
+                <option> Isolated study </option>
+                <option> Group study</option>
+                <option> Community event (party, etc.) </option>
+            </select>
+            <form id="submit_form">
+                <input id="submit" type="submit" value="Reserve">
+            </form>
+        </div>
+
+
+
+        <div id="return">
+            <a href="../index.html">
+                <img src="../../sources/arrow.gif" id="arrow_img">
+            </a>
+            <p id="p_return">Back to the front page</p>
+        </div>
+    </div>
+
+</body>
+</html>

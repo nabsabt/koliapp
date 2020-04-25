@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="studying_style.css">
+    <script src="../../scripts/studying/studying_script.js"></script>
+    <title>KoliApp - Tanulószobák</title>
+</head>
+
+<body>
+    <div id="main_container">
+
+
+        <div id="koliapp_logo">
+            <img src="../logo.gif" id="logo_img">
+        </div>
+
+        <div id="main_controller">
+            <h3 id="h3_subtitle">Tanulószoba foglalás</h3>
+            <p id="choose" style="font-size: 25px;">Válassz egy tanulószobát</p>
+            <p id="comment" style="font-style: italic;">A legördülő listában a már foglalt szobák is ott vannak <br> Nézd meg, van-e még annyi hely, ahányan menni akartok</p>
+        </div>
+
+        <div id="controllers">
+            <select name="rooms" id="rooms">
+                <option selected> -válaszd ki a tanulószobát- </option>
+                <option> 117 </option>
+                <option> 545 </option>
+                <option> 613 </option>
+                <option> 226 </option>
+                <option> 157 </option>
+                <option> 565 </option>
+                <option> 603 </option>
+                <option> 256 </option>
+            </select>
+            <p id="free_slots" style="visibility: hidden;">Szabad férőhelyek:</p>
+            <p id="current_purpose" style="visibility: hidden;">Mire használják épp:</p>
+            <br>
+            <select name="number_of_person" id="number_of_person">
+                <option selected> -hány fő menne?- </option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+            </select>
+            <br>
+            <select name="purpose" id="purpose">
+                <option selected> -mire használnád/használnátok?- </option>
+                <option> Egyéni tanulás </option>
+                <option> Csoportos tanulás </option>
+                <option> Közösségi tevékenység (buli, egyéb) </option>
+            </select>
+            <form id="submit_form">
+                <input id="submit" type="submit" value="Foglalás">
+            </form>
+        </div>
+
+
+
+        <div id="return">
+            <a href="../index.html">
+                <img src="../../sources/arrow.gif" id="arrow_img">
+            </a>
+            <p id="p_return">Vissza a kezdőoldalra</p>
+        </div>
+    </div>
+
+</body>
+</html>

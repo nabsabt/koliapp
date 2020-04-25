@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="occasion_style.css">
+    <script src="../../scripts/occasion/occasion_script.js"></script>
+    <title>KoliApp - Events</title>
+</head>
+
+<body>
+    <div id="main_container">
+
+
+        <div id="koliapp_logo">
+            <img src="../logo.gif" id="logo_img">
+        </div>
+
+        <div id="controllers">
+            <select name="title" id="title">
+                <option selected> -choose an event- </option>
+                <option> Chat </option>
+                <option> Boardgames </option>
+                <option> Beerpong </option>
+                <option> Watch movies </option>
+                <option> Drinking games </option>
+                <option> Pre-Party basics </option>
+                <option> Other... </option>
+
+            </select>
+            <br>
+            <select name="room" id="room">
+                <option selected> -choose the place for the event- </option>
+                <option> 112 </option>
+                <option> 117</option>
+                <option> 4th floor meeting room</option>
+                <option> 6th floot terrace </option>
+            </select>
+            <br>
+            <p id="notes">Other information about the event</p>
+            <textarea rows="5" cols="50" id="text_area"></textarea>
+            <form id="submit_form">
+                <input id="submit" type="submit" value="Send">
+            </form>
+        </div>
+
+
+        <div id="return">
+            <a href="../index.html">
+                <img src="../../sources/arrow.gif" id="arrow_img">
+            </a>
+            <p id="p_return">Back to the front page</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

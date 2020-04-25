@@ -1,6 +1,7 @@
-@font-face { font-family: Righteous; 
-    src: url('../sources/Righteous-Regular.ttf');
- } 
+@font-face {
+    font-family: Righteous;
+    src: url('../../sources/Righteous-Regular.ttf');
+} 
 
 
 body {
@@ -33,39 +34,19 @@ body {
     padding-bottom: 0px;
 }
 
-
-#h3_subtitle, #choose, #comment,#controllers, #rooms, #number_of_person, #purpose, #submit, #p_return{
+#controllers, #h3_subtitle, #p_name, #textarea_name, #p_neptun, #textarea_neptun, #block, #room, #p_summary, #textarea_summary, #p_return{
     color: rgb(51, 51, 51);
     font-family: Righteous;
     text-align: center;
+    padding: 10px;
+    margin: 3px;
 }
-
-
 #p_return{
     padding-top: 0;
     padding-bottom: 5%;
     margin: 0;
-   
-   }
-   
-
-#h1_koliapp {
-    font-size: 75px;
-    padding-top: 3%;
-
 }
 
-
-#h3_subtitle {
-    font-size: 45px;
-    padding-top:6%;
-
-}
-
-#rooms, #number_of_person, #purpose{
-    padding: 8px;
-    margin-top: 5px;
-}
 
 #submit {
     color: rgb(51, 51, 51);
@@ -85,15 +66,14 @@ body {
     margin: 3px; 
     transition: 400ms;
 }
-
-
 #arrow_img{
     height: 110px;
     width: auto;
     display: block;
-    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
+
     transition: 600ms;
     margin-bottom: 0;
 }
@@ -109,5 +89,4 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-
 }

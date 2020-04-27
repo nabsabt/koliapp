@@ -2,7 +2,7 @@ Project tasks:
 
 Jeremy: Language localization
 
-Martina:
+Martina: Rearrange login module fields
 
 
 Micsku Bence:

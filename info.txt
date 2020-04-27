@@ -2,7 +2,7 @@ Project tasks:
 
 Jeremy: Language localization
 
-Martina: Rearrange login module fields
+Martina: Rearrange login module fields, resolve washing reservation bug, modify washing reservation layout
 
 
 Micsku Bence:

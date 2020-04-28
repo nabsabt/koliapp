@@ -6,7 +6,7 @@
 @font-face {
     font-family: Righteous;
     src: url('../../sources/Righteous-Regular.ttf');
-} 
+}
 
 
 body {
@@ -39,7 +39,7 @@ body {
     transition: 600ms;
     padding-bottom: 0px;
 }
-#h3_subtitle, #p_return, #table1, #machine_name{
+#h3_subtitle, #p_return, #table1, #table2, #table3, #machine_name{
     color: rgb(51, 51, 51);
     font-family: Righteous;
     text-align: center;
@@ -63,19 +63,19 @@ body {
     margin: 0;
 }
 
-#table1{
+#table1, #table2, #table3{
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 
 #p_return{
     padding-top: 0;
     margin: 0;
-   
+
    }
-   
+
 
 #arrow_img{
     height: 110px;
@@ -91,7 +91,7 @@ body {
 
     transform: rotate(-420deg);
     transition: 600ms;
-    
+
 }
 #return{
     width: fit-content;
